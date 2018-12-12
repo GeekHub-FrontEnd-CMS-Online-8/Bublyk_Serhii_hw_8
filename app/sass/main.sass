@@ -1,0 +1,511 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	padding: 0
+	margin: 0
+	border: 0
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section
+	display: block
+
+html
+	scroll-behavior: smooth
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: none
+
+a:hover, a:active
+	outline: none
+
+a
+	text-decoration: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+@import "fonts"
+@import "media"
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
+body,#wrapper
+	margin: 0 auto
+	max-width: 2560px
+	min-width: 1401px
+
+html
+
+	font-family: $font
+div
+	box-sizing: border-box
+
+
+#wrapper, .container,.sub_container, nav, ul
+	display: flex
+
+
+
+.container
+	margin: 0 auto
+	min-width: 940px
+	max-width: 940px
+	padding:
+		left: 40px
+		right: 40px
+	justify-content: center
+
+.sub_container
+	justify-content: center
+
+
+header
+	min-width: 1400px
+	max-width: 100%
+	height: 620px
+	background:
+		image: url("../img/bg_header.jpeg")
+		position: center
+		repeat: no-repeat
+		size: cover
+	padding-top: 50px
+	.container
+		flex-direction: row
+		justify-content: space-between
+	.logo
+		width: 140px
+		height: 29px
+	#dws-menu, label
+		display: none
+		
+	nav
+		align-items: center
+
+		a
+			color: rgb(255, 255, 255)
+			text-decoration: none
+			font-size: 18px
+
+	li
+		padding-left: 30px
+
+	.leb-menu
+		img
+			height: 50px
+			width: 50px
+	.two
+		flex-direction: column
+		justify-content: center
+		margin-top: 153px
+		
+	.text_1
+		font-size: 32px
+		color: rgb(255, 255, 255)
+		line-height: 1.2
+		text-align: center
+	.text_2
+		font-size: 66px
+		color: rgb(255, 255, 255)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.2
+		margin: 50px
+	button
+		width: 240px
+		height: 65px
+		border: 2px solid white
+		background-color: transparent
+
+		font-size: 23px
+		color: rgb(255, 255, 255)
+		font-weight: bold
+		line-height: 1.2
+		text-align: center
+
+h1
+	font-size: 60px
+	color: rgb(34, 34, 34)
+	line-height: 1.25
+	font-weight: normal
+	
+	span
+		font-weight: bold
+		
+	
+	
+
+#development
+	.container
+		margin-top: 100px
+		margin-bottom: 100px
+	.dev
+		flex-direction: column
+
+	.description
+		flex-direction: column
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 0
+		height: 145px
+		margin-top: 30px
+	.sub_container
+		width: 555px
+	.icon
+		align-items: center
+		
+		
+	.icon_img
+		width: 221px
+		height: 222px
+.icon
+	&:hover
+		img
+			filter: invert(100%)
+
+#branding
+	.container
+		margin-top: 100px
+		margin-bottom: 100px
+	.dev
+		flex-direction: column
+
+	.description
+		flex-direction: column
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 0
+		height: 145px
+		margin-top: 30px
+	.sub_container
+		width: 520px
+	.icon
+		align-items: center
+
+
+	.icon_img
+		width: 272px
+		height: 197px
+	.icon
+		&:hover
+			img
+				filter: invert(100%)
+
+#skills
+	.container
+		justify-content: space-between
+		margin-top: 100px
+		margin-bottom: 100px
+	.col
+		
+		flex-direction: column
+	.items
+		
+		margin-bottom: 50px
+	.icon_img
+		width: 72px
+		height: 72px
+		margin-right: 20px
+	.itdesrip
+		flex-direction: column
+		
+		max-width: 285px
+	h2
+		font-size: 22px
+		color: rgb(34, 34, 34)
+		line-height: 1.2
+		text-align: left
+		margin-bottom: 20px
+
+
+	.text_3
+		font-size: 18px
+		color: rgb(119, 119, 119)
+		line-height: 1
+		text-align: left
+		margin-bottom: 50px
+		
+.uper
+	text-transform: uppercase
+
+#client
+	.container
+		margin-top: 100px
+
+	h1
+		text-align: center
+		margin-top: 100px
+	.text_4
+		font-size: 22px
+		color: rgb(119, 119, 119)
+		line-height: 1.2
+		text-align: center
+	.text_5
+		font-size: 26px
+		color: rgb(119, 119, 119)
+		line-height: 1.077
+		text-align: left
+	.text_6
+		font-size: 20px
+		color: rgb(118, 144, 197)
+		line-height: 1.8
+		text-align: left
+
+	.sub_container
+		flex-direction: column
+		
+		
+	.items
+		padding-left: 70px
+		padding-right: 70px
+		
+
+	.icon_img
+		padding-right: 50px
+
+	.two
+		margin-top: 40px
+	.icon_img2
+		padding-left: 50px
+
+#logos
+	.container
+		align-items: center
+		margin-top: 60px
+		margin-bottom: 60px
+		justify-content: space-around
+	.logos1
+		width: 161px
+		height: 30px
+	.logos2
+		width: 186px
+		height: 42px
+	.logos3
+		width: 131px
+		height: 41px
+	.logos4
+		width: 167px
+		height: 42px
+
+#team
+	min-width: 1400px
+	max-width: 100%
+	background:
+		color: black
+	
+	.title
+		text-align: center
+		flex-direction: column
+
+	
+	h1
+		color: #FFFFFF
+
+		text-align: center
+		padding-top: 100px
+	.text_7
+		font-size: 22px
+		color: rgb(119, 119, 119)
+		text-align: center
+		margin-bottom: 73px
+		
+		
+	.team
+		justify-content: space-around
+	.sub_container
+		color: #FFFFFF
+		flex-direction: column
+	ul
+		flex-direction: column
+		align-items: center
+		padding-top: 15px
+		padding-bottom: 10px
+	li
+		font-size: 18px
+		color: rgb(255, 255, 255)
+		font-weight: bold
+		padding-top: 8px
+	.litter
+		font-weight: lighter
+
+.sub_container_soc
+	margin-left: 25px
+	
+	
+.social
+	a
+		text-align: center
+		width: 40px
+		height: 40px
+		float: left
+		background: black
+		border: 3px solid white
+		border-radius: 50px
+		
+		box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1)
+		color: #FFFFFF
+		margin-left: 10px
+	.fa-linkedin,.fa-google-plus,.fa-twitter,.fa-facebook, .fa-pinterest
+		margin-top: 10px
+
+.google-plus a:hover
+	background: #DD4B39
+	color: #fff
+
+	box-shadow: 1px 1px 7px 1px #DD4B39
+	transition: 0.5s
+
+.twitter a:hover
+	background: #00acee
+	color: black
+
+	box-shadow: 1px 1px 7px 1px #00acee
+	transition: 0.5s
+
+.pinterest a:hover
+	background: red
+	color: #fff
+
+	box-shadow: 1px 1px 7px 1px #0e76a8
+	transition: 0.5s
+
+.facebook a:hover
+	background: #3b5998
+	color: #fff
+	box-shadow: 1px 1px 7px 1px #3b5998
+	transition: 0.5s
+
+.sub_container_soc2
+	margin-left: 50px
+	
+.team_end
+	margin-top: 50px
+.text_8
+	font-size: 20px
+	color: rgb(235, 235, 235)
+	line-height: 1.2
+	text-align: center
+	width: 590px
+	margin-top: 50px
+	margin-bottom: 100px
+
+footer
+	min-width: 1400px
+	max-width: 100%
+	background:
+		color: #7690c5
+	padding-top: 100px
+	padding-bottom: 35px
+
+	.container
+		padding: 0
+	.inp, ul
+		flex-direction: column
+		
+		li
+			margin-bottom: 20px
+			padding-left: 15px
+	h1
+		color: #FFFFFF
+	.title
+		flex-direction: column
+	.text_9
+		font-size: 20px
+		color: rgb(235, 235, 235)
+		line-height: 1.2
+		text-align: left
+		margin-bottom: 50px
+
+	.col_contact
+		justify-content: flex-start
+		
+	.items_contact
+		flex-direction: column
+		justify-content: center
+		
+		.sub_container
+			height: 30px
+			width: 220px
+			align-items: center
+			flex-direction: row
+			margin-bottom: 66px
+			justify-content: flex-start
+	.text_11
+		font-size: 18px
+		color: rgb(255, 255, 255)
+		line-height: 1.2
+		text-align: left
+		padding-left: 10px
+	
+	img
+		&:hover
+			filter: invert(100%)
+
+input
+	border:
+		style: solid
+		width: 1px
+		color: rgb(204, 204, 204)
+	border-radius: 2px
+	background-color: rgb(255, 255, 255)
+	width: 460px
+	height: 54px
+textarea
+	width: 455px
+	height: 210px
+	padding-top: 20px
+input, textarea, input[type=submit]
+	font-size: 18px
+	line-height: 1.2
+	text-align: left
+	padding-left: 20px
+hr
+	background-color: rgb(135, 160, 210)
+	border: none
+	width: 940px
+	height: 1px
+	margin-top: 35px
+	margin-bottom: 35px
+.text_10
+	font-size: 16px
+	color: rgb(255, 255, 255)
+	line-height: 1.375
+	text-align: center
+input[type=submit]
+	width: 123px
+	height: 50px
+	padding-right: 20px
+	text-align: center
+	color: rgb(119, 119, 119)
+
+
+
+
+
+
+
+
+
+
+
+
+

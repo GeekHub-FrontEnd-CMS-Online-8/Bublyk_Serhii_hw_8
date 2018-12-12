@@ -1,0 +1,4 @@
+[2018-12-10 16:31:15] layer "Google+": Expected end of input but "+" found.
+[2018-12-10 16:31:15] layer "Google+": Expected end of input but "+" found.
+[2018-12-10 16:31:15] layer "Tuts+": Expected end of input but "+" found.
+[2018-12-10 16:31:15] layer "hello@escape.com": Unsupported extension: com
